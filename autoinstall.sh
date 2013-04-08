@@ -1,5 +1,13 @@
 #!/bin/sh
-INSTALL_TO=~/Projects
+read -p "What user's fork of nvie/vimrc do you wish to use? (Leave blank for nvie)" REPOFORK
+if [ -z "$REPOFORK" ]; then
+    REPOFORK=nvie
+fi
+
+read -p "What is your git projects folder? (Leave blank for ~/Projects)" INSTALL_TO
+if [ -z "$INSTALL_TO" ]; then
+    INSTALL_TO=~/Projects
+fi
 
 warn() {
     echo "$1" >&2
@@ -15,7 +23,7 @@ die() {
 [ -e "~/.vimrc" ] && die "~/.vimrc already exists."
 
 cd "$INSTALL_TO"
-git clone git://github.com/nvie/vimrc.git
+git clone git://github.com/$REPOFORK/vimrc.git
 cd vimrc
 
 # Download vim plugin bundles
