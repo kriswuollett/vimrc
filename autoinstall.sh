@@ -1,13 +1,6 @@
 #!/bin/sh
-read -p "What user's fork of nvie/vimrc do you wish to use? (Leave blank for nvie)" REPOFORK
-if [ -z "$REPOFORK" ]; then
-    REPOFORK=nvie
-fi
-
-read -p "What is your git projects folder? (Leave blank for ~/Projects)" INSTALL_TO
-if [ -z "$INSTALL_TO" ]; then
-    INSTALL_TO=~/Projects
-fi
+REPOFORK=kriswuollett
+INSTALL_TO=~/workspace
 
 warn() {
     echo "$1" >&2
