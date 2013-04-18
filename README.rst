@@ -3,7 +3,7 @@ Quick installation
 Simply run this script to install and configure this vimrc in your `$HOME`
 dir::
 
-	wget -O - https://github.com/nvie/vimrc/raw/master/autoinstall.sh | sh
+	wget -O - https://github.com/kriswuollett/vimrc/raw/master/autoinstall.sh | sh
 
 Installing this vimrc manually
 ==============================
@@ -12,11 +12,11 @@ like it.  To do so, please do the following:
 
 1. Clone this repo::
 
-   	git clone git://github.com/nvie/vimrc.git
+   	git clone git://github.com/kriswuollett/vimrc.git
 
    or download the plain source only::
 
-   	wget -qO - http://github.com/nvie/vimrc/tarball/master | tar -xzvf -
+   	wget -qO - http://github.com/kriswuollett/vimrc/tarball/master | tar -xzvf -
 
 2. In your ~/.vimrc, add the following line::
 
